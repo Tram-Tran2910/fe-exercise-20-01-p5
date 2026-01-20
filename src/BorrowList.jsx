@@ -163,9 +163,9 @@ function BorrowList({ borrowList = [], onAddBorrow, onEditBorrow, onDeleteBorrow
         </thead>
 
         <tbody>
-          {filteredBorrowList.map((borrow) => (
+          {filteredBorrowList.map((borrow, index) => (
             <tr key={borrow.id}>
-              <td>{borrow.id}</td>
+              <td>{index + 1}</td>
               <td>{borrow.bookName}</td>
               <td>{borrow.borrower}</td>
               <td>{borrow.borrowDate}</td>
